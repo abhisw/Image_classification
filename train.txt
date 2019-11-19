@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \cb1 \CocoaLigature0 opencv_createsamples -img C5.jpg -bg neg_neg_car_auto.txt -info pos_car/info_C5.lst -pngoutput pos_car -num 500\
+opencv_createsamples -info car.info -w 24 -h 24 -num 4264 -vec car.vec\
+opencv_traincascade -vec auto_car.vec -data data -bg bg_car.txt -w 24 -h 24 -numStages 20 \
+}

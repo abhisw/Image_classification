@@ -1,0 +1,16 @@
+A)
+	pos = 6000 neg = 30000
+	opencv_traincascade -data data -vec cycle.vec -bg bg.txt -numStages 15 -w 100 -h 150 HOG
+
+B)
+	pos = 6000 neg = 30000
+	opencv_traincascade -data data -vec cycle.vec -bg bg.txt -numStages 20 -w 20 -h 20
+
+C) bike with har
+	pos = 4700 neg= 30000
+	opencv_traincascade -data data -vec bike.vec -bg bg.txt -numStages 20 -w 20 -h 20
+
+D) suggested by pensia
+	13000 positive samples 18000 negative samples
+	opencv_traincascade -data data -vec two_whl.vec -bg bg_two.txt -numStages 24 -w 24 -h 24
+
